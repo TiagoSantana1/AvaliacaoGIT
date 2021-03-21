@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Avaliacao {
+    private WebDriver navegador;
+
     @Test
     public void testAvaliacaoSiagri() {
 
