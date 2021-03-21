@@ -23,7 +23,7 @@ public class Avaliacao {
         //Navegando para a pagina da Siagri
           navegador.get("http://www.siagri.com.br");
         //navegando para segmentos
-   //     navegador.get("https://www.siagri.com.br/segmentos");
+        navegador.get("https://www.siagri.com.br/segmentos");
         // Tempo de esperar para a pagina carregar os elementos
        //  navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
@@ -31,14 +31,14 @@ public class Avaliacao {
 
         //Validar segmentos atendidos buscando os segmentos pelo id do menuSegmentos
 
-        WebElement linkdistribuidor = navegador.findElement(By.xpath("//section[2]"));
-        String textodistribuidor = linkdistribuidor.getText();
+    //    WebElement linkdistribuidor = navegador.findElement(By.xpath("//section[2]"));
+      //  String textodistribuidor = linkdistribuidor.getText();
 
 
         //Comparacao dos segmentos encontrados com os atendidos
       //  assertEquals("Distribuidor\nde Insumos\n", textodistribuidor);
 
-      assertEquals(" Distribuidor de insumos\n Loja agropecuária\n Armazéns gerais\n Produtor agrícola\n Sementeira\n Outros", textodistribuidor);
+    //  assertEquals(" Distribuidor de insumos\n Loja agropecuária\n Armazéns gerais\n Produtor agrícola\n Sementeira\n Outros", textodistribuidor);
 
         // CT-02
 

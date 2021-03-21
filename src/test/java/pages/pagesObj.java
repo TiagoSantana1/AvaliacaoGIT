@@ -21,7 +21,7 @@ public class pagesObj {
         return new Siagri(navegador);
 
     }
-
+    //captura o texto  e retorna
     public String capturarTexto(){
         return navegador.findElement(By.xpath("//section[2]")).getText();
 

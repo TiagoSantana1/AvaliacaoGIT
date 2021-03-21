@@ -19,12 +19,7 @@ public class Web {
         return navegador;
     }
 
-    public void FecharSite() {
-
-        WebDriver  navegador = new ChromeDriver();
-        navegador.close();
 
 
     }
 
-}
