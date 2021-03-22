@@ -15,9 +15,9 @@ public class Avaliacao {
     @Test
     public void testAvaliacaoSiagri() {
 
-        Web Site = new Web();
+     //   Web Site = new Web();
       //  Site.AbrirSite();
-        WebDriver navegador;
+       // WebDriver navegador;
         System.setProperty("webdriver.chrome.driver", "/Users/chromedriver");
          navegador = new ChromeDriver();
         //Navegando para a pagina da Siagri
@@ -43,7 +43,7 @@ public class Avaliacao {
         // CT-02
 
 
-        WebElement titulo = navegador.findElement(By.xpath("//h3"));
+        WebElement titulo = navegador.findElement(By.xpath("//h2"));
        String titulo2 = titulo.getText();
        // comparando titulo
        assertEquals("Softwares para gestão de distribuidores e revendas de insumos agrícolas",titulo2);

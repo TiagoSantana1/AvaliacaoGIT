@@ -4,23 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Siagri {
+public class Siagri2 {
     private WebDriver navegador;
 
-    public  Siagri (WebDriver navegador){
+    public Siagri2(WebDriver navegador){
         this.navegador = navegador;
 
     }
 
     //captura o texto  e retorna
     public String capturarTexto(){
-       return navegador.findElement(By.xpath("//h2")).getText();
+       return navegador.findElement(By.xpath("//p")).getText();
 
     }
 
-    public String capturartextos(){
-        WebElement texto = navegador.findElement(By.xpath("//p"));
-         return new capturartextos(navegador);
 
     }
 

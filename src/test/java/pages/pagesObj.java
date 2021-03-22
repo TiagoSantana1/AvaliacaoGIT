@@ -28,5 +28,11 @@ public class pagesObj {
 
     }
 
+    //captura o texto  e retorna
+    public String capturarTexto2(){
+        return navegador.findElement(By.xpath("//section[2]")).getText();
+
+
+    }
 
 }
