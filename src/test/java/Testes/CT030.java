@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pages.Siagri;
 import pages.Siagri2;
+import pages.Siagri4;
 import suporte.Web;
 
 import static org.junit.Assert.assertEquals;
@@ -16,19 +17,16 @@ public class CT030 {
     @Before
     public void setUp(){
         //Abre o site
-        navegador = Web.createChrome();
+        navegador = Web.createChrome2();
 
     }
 
     @Test
     public void ExecutaCT030  () {
-        String textodistribuidor = new Siagri(navegador)
+        String textodistribuidor = new Siagri4(navegador)
         .capturarTexto();
-        String textodistribuidor2 = new Siagri2(navegador)
-               .capturarTexto();
 
-        assertEquals("Loja agropecuária", textodistribuidor);
-
+        assertEquals("https://www.siagri.com.br/segmentos/loja-agropecuaria", textodistribuidor);
 
     }
 

@@ -21,7 +21,7 @@ public class CT051 {
     }
 
     @Test
-    public void ExecutaCT030  () {
+    public void ExecutaCT051  () {
         String textodistribuidor = new Siagri(navegador)
         .capturarTexto();
         String textodistribuidor2 = new Siagri2(navegador)

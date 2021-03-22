@@ -6,6 +6,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pages.Siagri;
 import pages.Siagri2;
+import pages.Siagri4;
+import pages.Siagri5;
 import suporte.Web;
 
 import static org.junit.Assert.assertEquals;
@@ -16,20 +18,16 @@ public class CT040 {
     @Before
     public void setUp(){
         //Abre o site
-        navegador = Web.createChrome();
+        navegador = Web.createChrome3();
 
     }
 
     @Test
-    public void ExecutaCT030  () {
-        String textodistribuidor = new Siagri(navegador)
-        .capturarTexto();
-        String textodistribuidor2 = new Siagri2(navegador)
-               .capturarTexto();
+    public void ExecutaCT040  () {
+        String textodistribuidor = new Siagri5(navegador)
+                .capturarTexto();
 
-        assertEquals("Softwares para gestão de distribuidores e revendas de insumos agrícolas", textodistribuidor);
-
-        assertEquals("Otimize processos, reduza desperdícios e tenha o controle de suas lojas em qualquer hora e lugar. Ganhe mais rentabilidade com o software de gestão que é líder no segmento de distribuição de insumos. Com o Grupo Siagri, você compra melhor, evita perdas no estoque, vende com mais eficiência e ainda tem mais segurança nas operações de Barter!", textodistribuidor2);
+        assertEquals("https://www.siagri.com.br/segmentos/armazens-gerais", textodistribuidor);
 
     }
 
