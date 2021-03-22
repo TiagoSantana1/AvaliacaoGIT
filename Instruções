@@ -10,4 +10,4 @@ Instruções para executar o projeto de automação
 6.	https://mvnrepository.com/artifact/junit/junit/4.12 
 
 
-7.	5. Abrir o IntelliJ , abrir o projeto , abrir Classe Avaliacao, clicar em Run Test para executar os testes.
+7.	5. Abrir o IntelliJ , abrir o projeto , abrir Classe Testes.Avaliacao, clicar em Run Test para executar os testes.
