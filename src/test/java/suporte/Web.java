@@ -15,6 +15,7 @@ public class Web {
         navegador.get("http://www.siagri.com.br");
         //navegando para segmentos
         navegador.get("https://www.siagri.com.br/segmentos");
+      //  navegador.get ("https://www.siagri.com.br/segmentos/loja-agropecuaria");
 
         return navegador;
     }

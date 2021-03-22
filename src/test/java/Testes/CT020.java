@@ -4,13 +4,14 @@ import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import pages.Siagri2;
+import pages.Siagri3;
 import pages.pagesObj;
 import suporte.Web;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class CT02 {
+public class CT020 {
     private WebDriver navegador;
     //Executa antes do teste
     @Before
@@ -20,11 +21,11 @@ public class CT02 {
 
     }
 
-    @Test
-    public void ExecutaCT02  () {
-        String textodistribuidor = new Siagri2(navegador)
-                //Executa o teste
-        .capturarTexto();
+    @Test //Executa o teste
+    public void ExecutaCT020  () {
+        String textodistribuidor = new Siagri3(navegador)
+                .capturarTexto();
+        assertEquals("Distribuidor de insumos", textodistribuidor);
 
 
 
@@ -37,6 +38,5 @@ public class CT02 {
     public void tearDown() {
         navegador.quit();
     }
-
 
 }
