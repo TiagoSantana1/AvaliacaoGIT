@@ -1,0 +1,13 @@
+Instruções para executar o projeto de automação
+
+1.	Instalar a ferramenta IntelliJ IDE
+2.	Instalar  o JAVA SE Kit 8, Update 241 (JDK 8u241)
+
+3.	Baixar o ChromeWebDriver de acordo com a versão do Google Chrome. https://chromedriver.chromium.org/downloads
+4.	Colocar o Chromedriver em um local da máquina e informar o local na Classe Web , System.setProperty("webdriver.chrome.driver", "/Users/chromedriver");
+
+5.	Adicionar as bibliotecas JUnit 4.12 e Selenium Java 3.6 no projeto. https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.6.0
+6.	https://mvnrepository.com/artifact/junit/junit/4.12 
+
+
+7.	5. Abrir o IntelliJ , abrir o projeto , abrir Classe Avaliacao, clicar em Run Test.
