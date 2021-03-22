@@ -27,9 +27,6 @@ public class CT020 {
                 .capturarTexto();
         assertEquals("Distribuidor de insumos", textodistribuidor);
 
-
-
-
     }
     //Executa depois do teste
     @After

@@ -14,19 +14,10 @@ public class Siagri3 {
 
     //captura o texto  e retorna
     public String capturarTexto(){
-      //  WebElement descricao = navegador.findElement(By.xpath("//div[@id='seg-3']/a"));
-      //  WebElement descricao = navegador.findElement(By.className("segmento-item seg-3"));
-      //  navegador.getTitle();
-     //  String descricao2 = navegador.getTitle();
-       navegador.findElement((By.xpath("//div[@id='seg-3']/a"))).getText();
-       String texto = navegador.findElement((By.xpath("//div[@id='seg-3']/a"))).getText();
-     //  Boolean descricao3 = navegador.findElement((By.xpath("//div[@id='seg-3']/a"))).isSelected();
 
+        //pega a página ativa e retorna
         return navegador.findElement((By.xpath("//div[@id='seg-3']/a"))).getText();
 
     }
-
-
-
 
 }
