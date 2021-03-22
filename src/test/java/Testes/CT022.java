@@ -2,16 +2,15 @@ package Testes;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pages.Siagri;
 import pages.Siagri2;
-import pages.pagesObj;
 import suporte.Web;
-import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class CT021 {
+public class CT022 {
     private WebDriver navegador;
     //Executa antes do teste
     @Before
@@ -22,7 +21,7 @@ public class CT021 {
     }
 
     @Test
-    public void ExecutaCT021  () {
+    public void ExecutaCT022  () {
         String textodistribuidor = new Siagri(navegador)
         .capturarTexto();
         String textodistribuidor2 = new Siagri2(navegador)

@@ -18,10 +18,5 @@ public class Siagri {
 
     }
 
-    public String capturartextos(){
-        WebElement texto = navegador.findElement(By.xpath("//p"));
-         return new capturartextos(navegador);
-
-    }
 
 }
